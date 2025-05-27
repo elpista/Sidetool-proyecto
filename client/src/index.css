@@ -1,0 +1,54 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .task-card {
+    @apply bg-white rounded-lg shadow-md p-6 mb-4 border-l-4 border-blue-500;
+  }
+  
+  .button-primary {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200;
+  }
+  
+  .button-secondary {
+  @apply bg-secondary hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-200;
+}
+
+.button-danger {
+  @apply bg-danger hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-200;
+}
+
+.input-field {
+  @apply w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+}
+
+.swal2-actions.swal2-visible-buttons {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.swal2-confirm.swal2-confirm-visible, 
+.swal2-cancel.swal2-cancel-visible {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
